@@ -6,7 +6,7 @@ class GoTListener(StreamListener):
 
     def on_data(self, data): 
         try: 
-            with open('example_file.json', 'a') as f: 
+            with open('output_files/example_file.json', 'a') as f: 
                 f.write(data)
                 return True
         except BaseException as e: 
