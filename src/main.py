@@ -15,8 +15,8 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)
 
-twitter_stream = tweepy.Stream(auth, GoTListener())
-twitter_stream.filter(track=['#gameofthrones'])
+#twitter_stream = tweepy.Stream(auth, GoTListener())
+#twitter_stream.filter(track=['#gameofthrones'])
 
 pp = PreProcessor()
-pp.example_output('output_files/example_file.json')
+pp.process_tweets('output_files/example_file.json')
