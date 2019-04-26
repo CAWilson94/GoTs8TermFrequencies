@@ -1,10 +1,11 @@
 import tweepy 
 from gotListener import GoTListener
+import globals as gl
 
-consumer_key = 'uKvHiugPJ7zYeDgWRddLDCgVf'
-consumer_secret = 'Msx82y6h4MdAkoCXtSSdDUDWorLhebVf8cByA0ASDgN3AShzBX'
-access_token = '216437150-YKQh9phgT8L0ot2cm1WhQJJfthnMxhO3xYmlRQ8E'
-access_token_secret = 'rhJgB2rQCQ2BOpMJe9PuNhvMOJtD2ECeynzz7HMpIfNfV'
+consumer_key = gl.Consumers.consumer_key
+consumer_secret = gl.Consumers.consumer_secret
+access_token = gl.AccessTokens.access_token
+access_token_secret = gl.AccessTokens.access_token_secret
 
 # TODO: pop the keys into some other nice place instead of hard coding. Thanks. 
 
